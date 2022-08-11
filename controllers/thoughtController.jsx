@@ -8,7 +8,7 @@ module.exports = {
     },
 
     getOneThought(req, res) {
-        Thought.findOne({ _id: req.params.thoughtI })
+        Thought.findOne({ _id: req.params.thoughtId })
             .select('-_v')
             .then(async (thought) =>
                 !thought
