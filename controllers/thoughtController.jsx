@@ -36,16 +36,13 @@ module.exports = {
                 })
                 .catch((err) => res.status(500).json(err));
             })
-            .then(() => res.json({
-                message: 'Thought created and added to user.'
-            }))
             .catch((err) => res.status(500).json(err));
     },
 
     updateThought(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
-            { $set: req.body_},
+            { $set: req.body },
             { new: true }
             )
             .then((thought) => 

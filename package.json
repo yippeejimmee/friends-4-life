@@ -20,7 +20,9 @@
   "homepage": "https://github.com/yippeejimmee/friends-4-life#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "mongodb": "^4.8.1",
     "mongoose": "^6.5.1",
+    "router": "^1.3.7",
     "routes": "^2.1.0"
   }
 }
